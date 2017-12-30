@@ -1,10 +1,10 @@
-update=Tuesday, September 26, 2017 'PMt' 12:22:16 PM
+update=Saturday, December 30, 2017 'AMt' 01:49:23 AM
 last_client=kicad
 [general]
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=lib
 [eeschema/libraries]
 LibName1=linear
 LibName2=digital-audio
@@ -71,3 +71,14 @@ LibName62=video
 LibName63=xilinx
 LibName64=lib/musev3
 LibName65=lib/muse_mini
+LibName66=lib/musev2
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60

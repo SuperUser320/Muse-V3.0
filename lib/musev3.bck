@@ -1,3 +1,8 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP 74FST3257
+D Multiplexer 4 x 2:1
+K TTL Mux4
+$ENDCMP
+#
 #End Doc Library
