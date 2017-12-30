@@ -65,7 +65,6 @@ LIBS:xilinx
 LIBS:musev3
 LIBS:muse_mini
 LIBS:musev2
-LIBS:musev3-cache
 EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500

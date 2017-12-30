@@ -65,10 +65,9 @@ LIBS:xilinx
 LIBS:musev3
 LIBS:muse_mini
 LIBS:musev2
-LIBS:musev3-cache
 EELAYER 25 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr USLetter 11000 8500
 encoding utf-8
 Sheet 3 3
 Title ""
