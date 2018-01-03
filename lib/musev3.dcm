@@ -39,4 +39,9 @@ D Quad Op amp. Mos
 K AmpliOp Mos
 $ENDCMP
 #
+$CMP TPD2E1B06
+D Transient voltage suppressor diode (bi-directional)
+K DEV TVS TRANSIENT SUPPROESSOR ESD
+$ENDCMP
+#
 #End Doc Library
