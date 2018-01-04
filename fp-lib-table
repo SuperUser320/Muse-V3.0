@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name muse-v3)(type KiCad)(uri "$(KIPRJMOD)/lib/muse-v3.pretty")(options "")(descr ""))
+  (lib (name muse-v2-lib)(type KiCad)(uri "$(KIPRJMOD)/lib/muse-v2-lib.pretty")(options "")(descr ""))
 )
