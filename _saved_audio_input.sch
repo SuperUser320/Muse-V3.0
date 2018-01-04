@@ -511,4 +511,6 @@ Wire Wire Line
 Connection ~ 4350 5700
 Text Notes 7600 3050 0    60   ~ 0
 Input biased by VCOM \nwhere VCOM = VCC/2 (2.5V nom.)
+Text Notes 6350 7000 0    60   ~ 0
+Design referenced from PCM3060\ndatasheet P40 (SLAS533B)
 $EndSCHEMATC
