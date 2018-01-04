@@ -29,6 +29,11 @@ K AmpliOp
 F op_amps/lm324.pdf
 $ENDCMP
 #
+$CMP RJMG163128101NR
+D RJ45 with transformer + leds WURTH
+K RJ45
+$ENDCMP
+#
 $CMP TL074
 D Quad Op amp. Mos
 K AmpliOp Mos

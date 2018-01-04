@@ -1,4 +1,4 @@
-update=Thursday, January 04, 2018 'AMt' 12:59:16 AM
+update=Thursday, January 04, 2018 'PMt' 05:16:15 PM
 last_client=kicad
 [general]
 version=1
