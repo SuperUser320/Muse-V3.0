@@ -1,10 +1,20 @@
-update=Thursday, January 04, 2018 'PMt' 11:04:42 PM
+update=Friday, August 17, 2018 'PMt' 10:10:18 PM
 last_client=kicad
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
-LibDir=lib
+LibDir=lib;/Users/jasonmerlo/Library/Mobile Documents/com~apple~CloudDocs/AutoDrive Challenge™/GitLab/Hardware/autodrive-kicad-lib
 [eeschema/libraries]
 LibName1=linear
 LibName2=digital-audio
@@ -72,13 +82,5 @@ LibName63=xilinx
 LibName64=lib/musev3
 LibName65=lib/muse_mini
 LibName66=lib/musev2
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName67=autodrive
+LibName68=lib/contrib-kicad_parts/conn-pwr_atx/atx24
