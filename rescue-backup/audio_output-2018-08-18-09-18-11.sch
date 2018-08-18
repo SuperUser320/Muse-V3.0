@@ -1,6 +1,74 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:linear
+LIBS:digital-audio
+LIBS:opto
+LIBS:audio
+LIBS:power
+LIBS:regul
+LIBS:rfcom
+LIBS:Solar Car Components
+LIBS:74xx
+LIBS:cmos4000
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:analog_switches
+LIBS:atmel
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:logo
+LIBS:memory
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip
+LIBS:microchip1
+LIBS:microcontrollers
+LIBS:motorola
+LIBS:msp430
+LIBS:nxp_armmcu
+LIBS:philips
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:sensors
+LIBS:siliconi
+LIBS:special
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:xilinx
+LIBS:musev3
+LIBS:muse_mini
+LIBS:musev2
+LIBS:autodrive
+LIBS:atx24
 LIBS:musev3-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -15,7 +83,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L musev3:OPA1664 U8
+L OPA1664 U8
 U 3 1 5A4A0205
 P 5250 2050
 F 0 "U8" H 5300 2250 60  0000 C CNN
@@ -34,7 +102,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 1500 5150 1650
 $Comp
-L power1:+5V #PWR098
+L +5V #PWR098
 U 1 1 5A4A0216
 P 5300 2500
 F 0 "#PWR098" H 5300 2590 20  0001 C CNN
@@ -45,7 +113,7 @@ F 3 "" H 5300 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:C C35
+L C C35
 U 1 1 5A4A021E
 P 5150 1200
 F 0 "C35" V 5200 1300 50  0000 L CNN
@@ -71,7 +139,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 1200 5350 1200
 $Comp
-L Solar-Car-Components:R R30
+L R R30
 U 1 1 5A4A0249
 P 5150 850
 F 0 "R30" H 4950 900 50  0000 C CNN
@@ -85,7 +153,7 @@ Wire Wire Line
 	5350 850  5850 850 
 Connection ~ 5850 1200
 $Comp
-L Solar-Car-Components:R R32
+L R R32
 U 1 1 5A4A0273
 P 4350 1950
 F 0 "R32" H 4150 2000 50  0000 C CNN
@@ -96,7 +164,7 @@ F 3 "" H 4350 1950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R33
+L R R33
 U 1 1 5A4A027B
 P 6650 2050
 F 0 "R33" H 6450 2100 50  0000 C CNN
@@ -114,7 +182,7 @@ AUDIO_OUT_L
 Wire Wire Line
 	7250 2050 6850 2050
 $Comp
-L Solar-Car-Components:R R34
+L R R34
 U 1 1 5A4A0409
 P 4350 2150
 F 0 "R34" H 4150 2200 50  0000 C CNN
@@ -125,7 +193,7 @@ F 3 "" H 4350 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:C C37
+L C C37
 U 1 1 5A4A043D
 P 4700 3000
 F 0 "C37" H 4750 3100 50  0000 L CNN
@@ -136,7 +204,7 @@ F 3 "" H 4700 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR099
+L GND #PWR099
 U 1 1 5A4A0477
 P 4700 3400
 F 0 "#PWR099" H 4700 3400 30  0001 C CNN
@@ -156,7 +224,7 @@ Wire Wire Line
 	4700 2150 4750 2150
 Connection ~ 4700 2150
 $Comp
-L Solar-Car-Components:C C36
+L C C36
 U 1 1 5A4A05D6
 P 3550 2150
 F 0 "C36" V 3600 2250 50  0000 L CNN
@@ -173,7 +241,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 1950 4150 1950
 $Comp
-L Solar-Car-Components:R R31
+L R R31
 U 1 1 5A4A064B
 P 2900 1950
 F 0 "R31" H 2700 2000 50  0000 C CNN
@@ -196,7 +264,7 @@ Wire Wire Line
 	4000 2350 3100 2350
 Connection ~ 4000 2150
 $Comp
-L Solar-Car-Components:R R35
+L R R35
 U 1 1 5A4A07FE
 P 2900 2350
 F 0 "R35" H 2700 2400 50  0000 C CNN
@@ -224,7 +292,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 2350 4000 2750
 $Comp
-L Solar-Car-Components:R R36
+L R R36
 U 1 1 5A4A0B17
 P 4000 2950
 F 0 "R36" V 3800 3050 50  0000 C CNN
@@ -236,7 +304,7 @@ F 3 "" H 4000 2950 60  0000 C CNN
 $EndComp
 Connection ~ 4000 2350
 $Comp
-L power1:GND #PWR0100
+L GND #PWR0100
 U 1 1 5A4A0BAE
 P 4000 3400
 F 0 "#PWR0100" H 4000 3400 30  0001 C CNN
@@ -249,7 +317,7 @@ $EndComp
 Wire Wire Line
 	4000 3400 4000 3150
 $Comp
-L musev3:OPA1664 U8
+L OPA1664 U8
 U 4 1 5A4A115F
 P 5250 5000
 F 0 "U8" H 5300 5200 60  0000 C CNN
@@ -266,7 +334,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 4900 4750 4900
 $Comp
-L Solar-Car-Components:C C38
+L C C38
 U 1 1 5A4A1176
 P 5150 4150
 F 0 "C38" V 5200 4250 50  0000 L CNN
@@ -288,7 +356,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 4150 5350 4150
 $Comp
-L Solar-Car-Components:R R37
+L R R37
 U 1 1 5A4A118B
 P 5150 3800
 F 0 "R37" H 4950 3850 50  0000 C CNN
@@ -302,7 +370,7 @@ Wire Wire Line
 	5350 3800 5850 3800
 Connection ~ 5850 4150
 $Comp
-L Solar-Car-Components:R R39
+L R R39
 U 1 1 5A4A11AB
 P 4350 4900
 F 0 "R39" H 4150 4950 50  0000 C CNN
@@ -313,7 +381,7 @@ F 3 "" H 4350 4900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R40
+L R R40
 U 1 1 5A4A11B2
 P 6650 5000
 F 0 "R40" H 6450 5050 50  0000 C CNN
@@ -331,7 +399,7 @@ AUDIO_OUT_R
 Wire Wire Line
 	7250 5000 6850 5000
 $Comp
-L Solar-Car-Components:R R41
+L R R41
 U 1 1 5A4A11BD
 P 4350 5100
 F 0 "R41" H 4150 5150 50  0000 C CNN
@@ -342,7 +410,7 @@ F 3 "" H 4350 5100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:C C40
+L C C40
 U 1 1 5A4A11C4
 P 4700 5950
 F 0 "C40" H 4750 6050 50  0000 L CNN
@@ -353,7 +421,7 @@ F 3 "" H 4700 5950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR0103
+L GND #PWR0103
 U 1 1 5A4A11CB
 P 4700 6350
 F 0 "#PWR0103" H 4700 6350 30  0001 C CNN
@@ -373,7 +441,7 @@ Wire Wire Line
 	4700 5100 4750 5100
 Connection ~ 4700 5100
 $Comp
-L Solar-Car-Components:C C39
+L C C39
 U 1 1 5A4A11D5
 P 3550 5100
 F 0 "C39" V 3600 5200 50  0000 L CNN
@@ -390,7 +458,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 4900 4150 4900
 $Comp
-L Solar-Car-Components:R R38
+L R R38
 U 1 1 5A4A11DD
 P 2900 4900
 F 0 "R38" H 2700 4950 50  0000 C CNN
@@ -413,7 +481,7 @@ Wire Wire Line
 	4000 5300 3100 5300
 Connection ~ 4000 5100
 $Comp
-L Solar-Car-Components:R R42
+L R R42
 U 1 1 5A4A11EA
 P 2900 5300
 F 0 "R42" H 2700 5350 50  0000 C CNN
@@ -441,7 +509,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 5300 4000 5700
 $Comp
-L Solar-Car-Components:R R43
+L R R43
 U 1 1 5A4A11F9
 P 4000 5900
 F 0 "R43" V 3800 6000 50  0000 C CNN
@@ -453,7 +521,7 @@ F 3 "" H 4000 5900 60  0000 C CNN
 $EndComp
 Connection ~ 4000 5300
 $Comp
-L power1:GND #PWR0104
+L GND #PWR0104
 U 1 1 5A4A1201
 P 4000 6350
 F 0 "#PWR0104" H 4000 6350 30  0001 C CNN
@@ -474,7 +542,7 @@ Design referenced from PCM3060\ndatasheet P40 (SLAS533B)
 Wire Wire Line
 	5300 2550 5300 2500
 $Comp
-L power1:GND #PWR?
+L GND #PWR?
 U 1 1 5B2B6AAE
 P 5300 1600
 F 0 "#PWR?" H 5300 1600 30  0001 C CNN
@@ -487,7 +555,7 @@ $EndComp
 Wire Wire Line
 	5300 1500 5300 1600
 $Comp
-L power1:+5V #PWR?
+L +5V #PWR?
 U 1 1 5B2B6DC6
 P 5300 5450
 F 0 "#PWR?" H 5300 5540 20  0001 C CNN
@@ -508,7 +576,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 4450 5300 4450
 $Comp
-L power1:GND #PWR?
+L GND #PWR?
 U 1 1 5B2B6F6A
 P 5300 4550
 F 0 "#PWR?" H 5300 4550 30  0001 C CNN

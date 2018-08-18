@@ -1,6 +1,74 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:linear
+LIBS:digital-audio
+LIBS:opto
+LIBS:audio
+LIBS:power
+LIBS:regul
+LIBS:rfcom
+LIBS:Solar Car Components
+LIBS:74xx
+LIBS:cmos4000
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:analog_switches
+LIBS:atmel
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:intel
+LIBS:interface
+LIBS:ir
+LIBS:logo
+LIBS:memory
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip
+LIBS:microchip1
+LIBS:microcontrollers
+LIBS:motorola
+LIBS:msp430
+LIBS:nxp_armmcu
+LIBS:philips
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:sensors
+LIBS:siliconi
+LIBS:special
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:xilinx
+LIBS:musev3
+LIBS:muse_mini
+LIBS:musev2
+LIBS:autodrive
+LIBS:atx24
 LIBS:musev3-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr USLetter 11000 8500
 encoding utf-8
@@ -15,7 +83,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L musev3:OPA1664 U8
+L OPA1664 U8
 U 1 1 5A49B619
 P 5100 2100
 F 0 "U8" H 5150 2300 60  0000 C CNN
@@ -26,7 +94,7 @@ F 3 "" H 5100 2100 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Solar-Car-Components:C C29
+L C C29
 U 1 1 5A49B886
 P 5000 1250
 F 0 "C29" V 5050 1350 50  0000 L CNN
@@ -37,7 +105,7 @@ F 3 "" H 5000 1250 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Solar-Car-Components:C C31
+L C C31
 U 1 1 5A49B9EB
 P 4350 3050
 F 0 "C31" H 4400 3200 50  0000 L CNN
@@ -48,7 +116,7 @@ F 3 "" H 4350 3050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R24
+L R R24
 U 1 1 5A49BC93
 P 5000 900
 F 0 "R24" H 4800 950 50  0000 C CNN
@@ -59,7 +127,7 @@ F 3 "" H 5000 900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR090
+L GND #PWR090
 U 1 1 5A49BD8E
 P 4350 3450
 F 0 "#PWR090" H 4350 3450 30  0001 C CNN
@@ -70,7 +138,7 @@ F 3 "" H 4350 3450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R25
+L R R25
 U 1 1 5A49BEA2
 P 4100 2000
 F 0 "R25" H 3900 2050 50  0000 C CNN
@@ -81,7 +149,7 @@ F 3 "" H 4100 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R26
+L R R26
 U 1 1 5A49BF60
 P 6500 2100
 F 0 "R26" H 6300 2150 50  0000 C CNN
@@ -96,7 +164,7 @@ AUDIO_IN_L
 Text HLabel 7550 2100 2    60   Input ~ 0
 ADC_VINL
 $Comp
-L musev3:OPA1664 U8
+L OPA1664 U8
 U 2 1 5A49EA75
 P 5100 5050
 F 0 "U8" H 5150 5250 60  0000 C CNN
@@ -107,7 +175,7 @@ F 3 "" H 5100 5050 60  0000 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power1:+5V #PWR091
+L +5V #PWR091
 U 1 1 5A49EA85
 P 6350 5500
 F 0 "#PWR091" H 6350 5590 20  0001 C CNN
@@ -118,7 +186,7 @@ F 3 "" H 6350 5500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Solar-Car-Components:C C32
+L C C32
 U 1 1 5A49EA8D
 P 5000 4200
 F 0 "C32" V 5050 4300 50  0000 L CNN
@@ -129,7 +197,7 @@ F 3 "" H 5000 4200 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Solar-Car-Components:C C34
+L C C34
 U 1 1 5A49EA9D
 P 4350 6000
 F 0 "C34" H 4400 6150 50  0000 L CNN
@@ -140,7 +208,7 @@ F 3 "" H 4350 6000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R27
+L R R27
 U 1 1 5A49EAB4
 P 5000 3850
 F 0 "R27" H 4800 3900 50  0000 C CNN
@@ -151,7 +219,7 @@ F 3 "" H 5000 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR092
+L GND #PWR092
 U 1 1 5A49EAC6
 P 4350 6400
 F 0 "#PWR092" H 4350 6400 30  0001 C CNN
@@ -162,7 +230,7 @@ F 3 "" H 4350 6400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R28
+L R R28
 U 1 1 5A49EADC
 P 4100 4950
 F 0 "R28" H 3900 5000 50  0000 C CNN
@@ -173,7 +241,7 @@ F 3 "" H 4100 4950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Solar-Car-Components:R R29
+L R R29
 U 1 1 5A49EAE3
 P 6500 5050
 F 0 "R29" H 6300 5100 50  0000 C CNN
@@ -190,7 +258,7 @@ ADC_VINR
 Text Notes 5000 3000 0    60   ~ 0
 Decoupling caps on page above
 $Comp
-L power1:+5V #PWR093
+L +5V #PWR093
 U 1 1 5A49B806
 P 5150 2550
 F 0 "#PWR093" H 5150 2640 20  0001 C CNN
@@ -301,7 +369,7 @@ Wire Wire Line
 Text Notes 4450 700  0    60   ~ 0
 48.2+/-3.4 kHz Low-Pass Filter
 $Comp
-L Solar-Car-Components:C C33
+L C C33
 U 1 1 5A49EA97
 P 3600 4950
 F 0 "C33" V 3550 4750 50  0000 L CNN
@@ -313,7 +381,7 @@ F 4 "Film" V 3650 4900 60  0000 R CNN "Type"
 	0    1    1    0   
 $EndComp
 $Comp
-L Solar-Car-Components:C C30
+L C C30
 U 1 1 5A49B8DC
 P 2500 2000
 F 0 "C30" V 2450 1800 50  0000 L CNN
@@ -325,7 +393,7 @@ F 4 "Film" V 2550 1950 60  0000 R CNN "Type"
 	0    1    1    0   
 $EndComp
 $Comp
-L power1:GND #PWR094
+L GND #PWR094
 U 1 1 5A4F89F7
 P 5150 1600
 F 0 "#PWR094" H 5150 1600 30  0001 C CNN
@@ -340,7 +408,7 @@ Wire Wire Line
 Text Notes 5800 1800 0    60   ~ 0
 Rail-to-rail operation will not damage ADC; \nno protection needed.\n\nVBIAS @ 2.5V no distortion expected.
 $Comp
-L power1:-5V #PWR095
+L -5V #PWR095
 U 1 1 5A4F9063
 P 6450 4200
 F 0 "#PWR095" H 6450 4340 20  0001 C CNN
@@ -351,7 +419,7 @@ F 3 "" H 6450 4200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:JUMPER3 JP2
+L JUMPER3 JP2
 U 1 1 5A4F9069
 P 6450 4500
 F 0 "JP2" H 6500 4400 40  0000 L CNN
@@ -364,7 +432,7 @@ $EndComp
 Wire Wire Line
 	6450 4250 6450 4200
 $Comp
-L power1:GND #PWR096
+L GND #PWR096
 U 1 1 5A4F9071
 P 6450 4800
 F 0 "#PWR096" H 6450 4800 30  0001 C CNN
@@ -377,7 +445,7 @@ $EndComp
 Wire Wire Line
 	6450 4800 6450 4750
 $Comp
-L Solar-Car-Components:R R?
+L R R?
 U 1 1 5B2B2643
 P 2850 2350
 F 0 "R?" V 2700 2400 50  0000 L CNN
@@ -393,7 +461,7 @@ Wire Wire Line
 	2850 1850 2850 2150
 Connection ~ 2850 2000
 $Comp
-L Solar-Car-Components:C C?
+L C C?
 U 1 1 5B2B2A01
 P 3400 2350
 F 0 "C?" H 3450 2500 50  0000 L CNN
@@ -407,7 +475,7 @@ Wire Wire Line
 	3400 2150 3400 2000
 Connection ~ 3400 2000
 $Comp
-L power1:GND #PWR?
+L GND #PWR?
 U 1 1 5B2B2B32
 P 2850 2650
 F 0 "#PWR?" H 2850 2650 30  0001 C CNN
@@ -420,7 +488,7 @@ $EndComp
 Wire Wire Line
 	2850 2550 2850 2650
 $Comp
-L power1:GND #PWR?
+L GND #PWR?
 U 1 1 5B2B2BC5
 P 3400 2650
 F 0 "#PWR?" H 3400 2650 30  0001 C CNN
@@ -433,7 +501,7 @@ $EndComp
 Wire Wire Line
 	3400 2650 3400 2550
 $Comp
-L power1:+5V #PWR?
+L +5V #PWR?
 U 1 1 5B2B2CA5
 P 2850 1350
 F 0 "#PWR?" H 2850 1440 20  0001 C CNN
@@ -448,7 +516,7 @@ Wire Wire Line
 Wire Wire Line
 	5150 2600 5150 2550
 $Comp
-L Solar-Car-Components:R R?
+L R R?
 U 1 1 5B2B3ADD
 P 2850 1650
 F 0 "R?" V 2700 1700 50  0000 L CNN
@@ -459,7 +527,7 @@ F 3 "" H 2850 1650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Solar-Car-Components:C C?
+L C C?
 U 1 1 5B2B42CB
 P 3700 2350
 F 0 "C?" H 3750 2500 50  0000 L CNN
@@ -473,7 +541,7 @@ Wire Wire Line
 	3700 2150 3700 2000
 Connection ~ 3700 2000
 $Comp
-L power1:GND #PWR?
+L GND #PWR?
 U 1 1 5B2B43E4
 P 3700 2650
 F 0 "#PWR?" H 3700 2650 30  0001 C CNN

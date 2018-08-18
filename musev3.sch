@@ -1,74 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:linear
-LIBS:digital-audio
-LIBS:opto
-LIBS:audio
-LIBS:power
-LIBS:regul
-LIBS:rfcom
-LIBS:Solar Car Components
-LIBS:74xx
-LIBS:cmos4000
-LIBS:74xgxx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:analog_switches
-LIBS:atmel
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:device
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic
-LIBS:hc11
-LIBS:intel
-LIBS:interface
-LIBS:ir
-LIBS:logo
-LIBS:memory
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip
-LIBS:microchip1
-LIBS:microcontrollers
-LIBS:motorola
-LIBS:msp430
-LIBS:nxp_armmcu
-LIBS:philips
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:relays
-LIBS:sensors
-LIBS:siliconi
-LIBS:special
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:xilinx
-LIBS:musev3
-LIBS:muse_mini
-LIBS:musev2
-LIBS:autodrive
-LIBS:atx24
+EESchema Schematic File Version 4
 LIBS:musev3-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -83,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L onion_omega2 U4
+L musev3:onion_omega2 U4
 U 1 1 59CA71F7
 P 5750 6550
 F 0 "U4" H 4950 7550 60  0000 C CNN
@@ -94,7 +26,7 @@ F 3 "" H 7150 6950 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR01
+L power1:GND #PWR01
 U 1 1 59CA7309
 P 5650 7800
 F 0 "#PWR01" H 5650 7800 30  0001 C CNN
@@ -106,7 +38,7 @@ F 3 "" H 5650 7800 60  0000 C CNN
 $EndComp
 NoConn ~ 5800 5400
 $Comp
-L +3.3V #PWR02
+L power1:+3.3V #PWR02
 U 1 1 59CA7342
 P 5700 4700
 F 0 "#PWR02" H 5700 4660 30  0001 C CNN
@@ -117,7 +49,7 @@ F 3 "" H 5700 4700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C11
+L device:CP1 C11
 U 1 1 59CA7362
 P 5950 5050
 F 0 "C11" H 6000 5150 50  0000 L CNN
@@ -128,7 +60,7 @@ F 3 "" H 5950 5050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C12
+L Solar-Car-Components:C C12
 U 1 1 59CA73E6
 P 6300 5050
 F 0 "C12" H 6350 5150 50  0000 L CNN
@@ -149,7 +81,7 @@ NoConn ~ 2350 6700
 NoConn ~ 2350 6600
 NoConn ~ 2350 6500
 $Comp
-L GND #PWR03
+L power1:GND #PWR03
 U 1 1 59CA8806
 P 2500 7750
 F 0 "#PWR03" H 2500 7750 30  0001 C CNN
@@ -160,7 +92,7 @@ F 3 "" H 2500 7750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR04
+L power1:GND #PWR04
 U 1 1 59CA8853
 P 3100 7750
 F 0 "#PWR04" H 3100 7750 30  0001 C CNN
@@ -171,7 +103,7 @@ F 3 "" H 3100 7750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C14
+L device:CP1 C14
 U 1 1 59CA88F5
 P 3100 6650
 F 0 "C14" H 3150 6750 50  0000 L CNN
@@ -182,7 +114,7 @@ F 3 "" H 3100 6650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR05
+L power1:+3.3V #PWR05
 U 1 1 59CA89FB
 P 3100 4750
 F 0 "#PWR05" H 3100 4710 30  0001 C CNN
@@ -239,7 +171,7 @@ SPI_MOSI
 Text Label 4150 6400 0    60   ~ 0
 SPI_CLK
 $Comp
-L GND #PWR09
+L power1:GND #PWR09
 U 1 1 59CAC478
 P 600 6950
 F 0 "#PWR09" H 600 6950 30  0001 C CNN
@@ -256,7 +188,7 @@ Microcontroller
 Text Label 4150 6500 0    60   ~ 0
 SPI_CS
 $Comp
-L CONN_01X06 P4
+L conn:CONN_01X06 P4
 U 1 1 5A44827B
 P 8900 5250
 F 0 "P4" H 8900 5600 50  0000 C CNN
@@ -269,7 +201,7 @@ $EndComp
 Text Notes 8150 4850 0    60   ~ 0
 Onion UART
 $Comp
-L DUAL_SWITCH_INV SW1
+L device:DUAL_SWITCH_INV SW1
 U 1 1 5A4488FA
 P 5050 3700
 F 0 "SW1" H 4850 3850 50  0000 C CNN
@@ -280,7 +212,7 @@ F 3 "" H 5050 3700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L DUAL_SWITCH_INV SW1
+L device:DUAL_SWITCH_INV SW1
 U 2 1 5A448965
 P 5050 4150
 F 0 "SW1" H 4850 4300 50  0000 C CNN
@@ -303,7 +235,7 @@ UART_RX
 NoConn ~ 8700 5000
 NoConn ~ 8700 5300
 $Comp
-L GND #PWR015
+L power1:GND #PWR015
 U 1 1 5A4493BF
 P 8650 5700
 F 0 "#PWR015" H 8650 5700 30  0001 C CNN
@@ -323,7 +255,7 @@ UART_TX
 Text Label 6150 3800 2    60   ~ 0
 UART_RX
 $Comp
-L LED D1
+L Solar-Car-Components:LED D1
 U 1 1 5A44963D
 P 900 4000
 F 0 "D1" H 760 4050 50  0000 C CNN
@@ -334,7 +266,7 @@ F 3 "" H 900 4000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR016
+L power1:GND #PWR016
 U 1 1 5A449763
 P 900 4300
 F 0 "#PWR016" H 900 4300 30  0001 C CNN
@@ -349,7 +281,7 @@ Power LED
 Text Notes 550  700  0    60   ~ 0
 PSU Input
 $Comp
-L GTL2010 U3
+L musev2:GTL2010 U3
 U 1 1 5A44ABED
 P 12200 4550
 F 0 "U3" H 12250 4600 60  0000 C CNN
@@ -362,7 +294,7 @@ $EndComp
 Text Notes 9850 4000 0    60   ~ 0
 LED Level Shifter
 $Comp
-L GND #PWR019
+L power1:GND #PWR019
 U 1 1 5A44B4BC
 P 13050 5050
 F 0 "#PWR019" H 13050 5050 30  0001 C CNN
@@ -373,7 +305,7 @@ F 3 "" H 13050 5050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C-RESCUE-museV2 C13
+L musev2:C-RESCUE-museV2 C13
 U 1 1 5A44B683
 P 13050 4900
 F 0 "C13" H 13075 5000 50  0000 L CNN
@@ -384,7 +316,7 @@ F 3 "" H 13050 4900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR021
+L power1:+5V #PWR021
 U 1 1 5A44BBF3
 P 13050 4050
 F 0 "#PWR021" H 13050 4140 20  0001 C CNN
@@ -395,7 +327,7 @@ F 3 "" H 13050 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R3
+L Solar-Car-Components:R R3
 U 1 1 5A44BC49
 P 13050 4350
 F 0 "R3" H 12850 4400 50  0000 C CNN
@@ -406,7 +338,7 @@ F 3 "" H 13050 4350 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R14
+L Solar-Car-Components:R R14
 U 1 1 5A44BF2B
 P 13400 4900
 F 0 "R14" H 13200 4950 50  0000 C CNN
@@ -417,7 +349,7 @@ F 3 "" H 13400 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R15
+L Solar-Car-Components:R R15
 U 1 1 5A44C04C
 P 13550 4900
 F 0 "R15" H 13350 4950 50  0000 C CNN
@@ -428,7 +360,7 @@ F 3 "" H 13550 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R16
+L Solar-Car-Components:R R16
 U 1 1 5A44C0B0
 P 13700 4900
 F 0 "R16" H 13500 4950 50  0000 C CNN
@@ -439,7 +371,7 @@ F 3 "" H 13700 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R17
+L Solar-Car-Components:R R17
 U 1 1 5A44C116
 P 13850 4900
 F 0 "R17" H 13650 4950 50  0000 C CNN
@@ -450,7 +382,7 @@ F 3 "" H 13850 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R18
+L Solar-Car-Components:R R18
 U 1 1 5A44C17F
 P 14000 4900
 F 0 "R18" H 13800 4950 50  0000 C CNN
@@ -461,7 +393,7 @@ F 3 "" H 14000 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R19
+L Solar-Car-Components:R R19
 U 1 1 5A44C25B
 P 14150 4900
 F 0 "R19" H 13950 4950 50  0000 C CNN
@@ -472,7 +404,7 @@ F 3 "" H 14150 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R20
+L Solar-Car-Components:R R20
 U 1 1 5A44C261
 P 14300 4900
 F 0 "R20" H 14100 4950 50  0000 C CNN
@@ -483,7 +415,7 @@ F 3 "" H 14300 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R21
+L Solar-Car-Components:R R21
 U 1 1 5A44C267
 P 14450 4900
 F 0 "R21" H 14250 4950 50  0000 C CNN
@@ -494,7 +426,7 @@ F 3 "" H 14450 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R22
+L Solar-Car-Components:R R22
 U 1 1 5A44C26D
 P 14600 4900
 F 0 "R22" H 14400 4950 50  0000 C CNN
@@ -505,7 +437,7 @@ F 3 "" H 14600 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R23
+L Solar-Car-Components:R R23
 U 1 1 5A44C273
 P 14750 4900
 F 0 "R23" H 14550 4950 50  0000 C CNN
@@ -516,7 +448,7 @@ F 3 "" H 14750 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R4
+L Solar-Car-Components:R R4
 U 1 1 5A44C429
 P 10450 4900
 F 0 "R4" H 10250 4950 50  0000 C CNN
@@ -527,7 +459,7 @@ F 3 "" H 10450 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R5
+L Solar-Car-Components:R R5
 U 1 1 5A44C42F
 P 10600 4900
 F 0 "R5" H 10400 4950 50  0000 C CNN
@@ -538,7 +470,7 @@ F 3 "" H 10600 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R6
+L Solar-Car-Components:R R6
 U 1 1 5A44C435
 P 10750 4900
 F 0 "R6" H 10550 4950 50  0000 C CNN
@@ -549,7 +481,7 @@ F 3 "" H 10750 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R7
+L Solar-Car-Components:R R7
 U 1 1 5A44C43B
 P 10900 4900
 F 0 "R7" H 10700 4950 50  0000 C CNN
@@ -560,7 +492,7 @@ F 3 "" H 10900 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R8
+L Solar-Car-Components:R R8
 U 1 1 5A44C441
 P 11050 4900
 F 0 "R8" H 10850 4950 50  0000 C CNN
@@ -571,7 +503,7 @@ F 3 "" H 11050 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R9
+L Solar-Car-Components:R R9
 U 1 1 5A44C447
 P 11200 4900
 F 0 "R9" H 11000 4950 50  0000 C CNN
@@ -582,7 +514,7 @@ F 3 "" H 11200 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R10
+L Solar-Car-Components:R R10
 U 1 1 5A44C44D
 P 11350 4900
 F 0 "R10" H 11150 4950 50  0000 C CNN
@@ -593,7 +525,7 @@ F 3 "" H 11350 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R11
+L Solar-Car-Components:R R11
 U 1 1 5A44C453
 P 11500 4900
 F 0 "R11" H 11300 4950 50  0000 C CNN
@@ -604,7 +536,7 @@ F 3 "" H 11500 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R12
+L Solar-Car-Components:R R12
 U 1 1 5A44C459
 P 11650 4900
 F 0 "R12" H 11450 4950 50  0000 C CNN
@@ -615,7 +547,7 @@ F 3 "" H 11650 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R13
+L Solar-Car-Components:R R13
 U 1 1 5A44C45F
 P 11800 4900
 F 0 "R13" H 11600 4950 50  0000 C CNN
@@ -626,7 +558,7 @@ F 3 "" H 11800 4900 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +3.3V #PWR022
+L power1:+3.3V #PWR022
 U 1 1 5A44C4C1
 P 11800 4050
 F 0 "#PWR022" H 11800 4010 30  0001 C CNN
@@ -637,7 +569,7 @@ F 3 "" H 11800 4050 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR023
+L power1:GND #PWR023
 U 1 1 5A44F031
 P 12450 6500
 F 0 "#PWR023" H 12450 6500 30  0001 C CNN
@@ -650,18 +582,18 @@ $EndComp
 Wire Wire Line
 	5700 7750 5700 7700
 Wire Wire Line
-	5600 7750 5700 7750
+	5600 7750 5650 7750
 Wire Wire Line
 	5650 7750 5650 7800
 Wire Wire Line
 	5800 7750 5800 7700
 Connection ~ 5650 7750
 Wire Wire Line
-	5700 4700 5700 5400
+	5700 4700 5700 4750
 Wire Wire Line
 	5950 4850 5950 4750
 Wire Wire Line
-	5700 4750 6300 4750
+	5700 4750 5950 4750
 Wire Wire Line
 	6300 4750 6300 4850
 Wire Wire Line
@@ -679,19 +611,19 @@ Wire Wire Line
 Wire Wire Line
 	3100 6200 2350 6200
 Wire Wire Line
-	3100 4750 3100 6450
+	3100 4750 3100 5900
 Wire Wire Line
 	2350 5900 3100 5900
 Connection ~ 3100 6200
 Connection ~ 3100 5900
 Wire Wire Line
-	2350 5800 3650 5800
+	2350 5800 2650 5800
 Wire Wire Line
-	2350 6000 3650 6000
+	2350 6000 2850 6000
 Wire Wire Line
-	2350 6100 3650 6100
+	2350 6100 2850 6100
 Wire Wire Line
-	2350 6300 3650 6300
+	2350 6300 2650 6300
 Wire Wire Line
 	4650 6900 4150 6900
 Wire Wire Line
@@ -755,17 +687,17 @@ Wire Wire Line
 Wire Wire Line
 	13050 4750 12900 4750
 Wire Wire Line
-	12900 4650 14750 4650
+	12900 4650 13050 4650
 Wire Wire Line
-	13050 4550 13050 4750
+	13050 4550 13050 4650
 Wire Wire Line
 	13050 4050 13050 4150
 Connection ~ 13050 4650
 Connection ~ 13050 4750
 Wire Wire Line
-	11800 4050 11800 4700
+	11800 4050 11800 4650
 Wire Wire Line
-	10450 4650 12000 4650
+	10450 4650 10600 4650
 Wire Wire Line
 	10450 4650 10450 4700
 Connection ~ 11800 4650
@@ -823,45 +755,45 @@ Wire Wire Line
 	13400 4700 13400 4650
 Connection ~ 13400 4650
 Wire Wire Line
-	9750 5200 12000 5200
+	9750 5200 10450 5200
 Wire Wire Line
-	9750 5300 12000 5300
+	9750 5300 10600 5300
 Wire Wire Line
-	9750 5400 12000 5400
+	9750 5400 10750 5400
 Wire Wire Line
-	9750 5500 12000 5500
+	9750 5500 10900 5500
 Wire Wire Line
-	9750 5600 12000 5600
+	9750 5600 11050 5600
 Wire Wire Line
-	9750 5700 12000 5700
+	9750 5700 11200 5700
 Wire Wire Line
-	9750 5800 12000 5800
+	9750 5800 11350 5800
 Wire Wire Line
-	9750 5900 12000 5900
+	9750 5900 11500 5900
 Wire Wire Line
-	9750 6000 12000 6000
+	9750 6000 11650 6000
 Wire Wire Line
-	9750 6100 12000 6100
+	9750 6100 11800 6100
 Wire Wire Line
-	12900 5200 15550 5200
+	12900 5200 13400 5200
 Wire Wire Line
-	12900 5300 15550 5300
+	12900 5300 13550 5300
 Wire Wire Line
-	12900 5400 15550 5400
+	12900 5400 13700 5400
 Wire Wire Line
-	12900 5500 15550 5500
+	12900 5500 13850 5500
 Wire Wire Line
-	12900 5600 15550 5600
+	12900 5600 14000 5600
 Wire Wire Line
-	12900 5700 15550 5700
+	12900 5700 14150 5700
 Wire Wire Line
-	12900 5800 15550 5800
+	12900 5800 14300 5800
 Wire Wire Line
-	12900 5900 15550 5900
+	12900 5900 14450 5900
 Wire Wire Line
-	12900 6000 15550 6000
+	12900 6000 14600 6000
 Wire Wire Line
-	12900 6100 15550 6100
+	12900 6100 14750 6100
 Wire Wire Line
 	12450 6500 12450 6400
 Wire Wire Line
@@ -945,7 +877,7 @@ IA_LED_8(3.3)
 Text Label 9750 6100 0    60   ~ 0
 IA_LED_9(3.3)
 $Comp
-L CONN_01X10 P3
+L conn:CONN_01X10 P3
 U 1 1 5A4520DD
 P 2800 3550
 F 0 "P3" H 2800 4100 50  0000 C CNN
@@ -1018,7 +950,7 @@ IA_LED_8(5)
 Text Label 15550 6100 2    60   ~ 0
 IA_LED_9(5)
 $Comp
-L PCM3060 U6
+L muse_mini:PCM3060 U6
 U 1 1 5A4599D9
 P 4900 9750
 F 0 "U6" H 4350 10600 60  0000 C CNN
@@ -1033,11 +965,11 @@ Audio CODEC
 Wire Wire Line
 	4100 9800 3150 9800
 Wire Wire Line
-	3150 9900 4100 9900
+	3150 9900 4050 9900
 Wire Wire Line
-	3150 10000 4100 10000
+	3150 10000 4000 10000
 Wire Wire Line
-	3150 10100 4100 10100
+	3150 10100 3950 10100
 Text Label 3150 9800 0    60   ~ 0
 I2S_SDI
 Wire Wire Line
@@ -1051,7 +983,7 @@ Wire Wire Line
 Text Label 3150 10300 0    60   ~ 0
 I2S_SDO
 $Comp
-L CFPS-73 X1
+L muse_mini:CFPS-73 X1
 U 1 1 5A46D289
 P 1400 10100
 F 0 "X1" H 1100 10400 60  0000 C CNN
@@ -1064,7 +996,7 @@ $EndComp
 Text Notes 650  8250 0    60   ~ 0
 System Clock Generator\n(Audio)
 $Comp
-L C C23
+L Solar-Car-Components:C C23
 U 1 1 5A46D842
 P 1700 9150
 F 0 "C23" H 1750 9250 50  0000 L CNN
@@ -1075,7 +1007,7 @@ F 3 "" H 1700 9150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR024
+L power1:GND #PWR024
 U 1 1 5A46D92F
 P 1700 9450
 F 0 "#PWR024" H 1700 9450 30  0001 C CNN
@@ -1086,7 +1018,7 @@ F 3 "" H 1700 9450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR025
+L power1:+3.3V #PWR025
 U 1 1 5A46DA6F
 P 1400 8700
 F 0 "#PWR025" H 1400 8660 30  0001 C CNN
@@ -1097,7 +1029,7 @@ F 3 "" H 1400 8700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 8700 1400 9650
+	1400 8700 1400 8850
 Wire Wire Line
 	1400 8850 1700 8850
 Wire Wire Line
@@ -1110,7 +1042,7 @@ Wire Wire Line
 Wire Wire Line
 	700  10100 700  9700
 $Comp
-L +3.3V #PWR026
+L power1:+3.3V #PWR026
 U 1 1 5A46E466
 P 700 9700
 F 0 "#PWR026" H 700 9660 30  0001 C CNN
@@ -1121,7 +1053,7 @@ F 3 "" H 700 9700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR027
+L power1:GND #PWR027
 U 1 1 5A46E53B
 P 1400 11000
 F 0 "#PWR027" H 1400 11000 30  0001 C CNN
@@ -1169,7 +1101,7 @@ I2S_CLK
 Text Notes 1950 2900 0    60   ~ 0
 Will likely change to \ncustom connectors
 $Comp
-L 74HC04 U1
+L 74xx1:74HC04 U1
 U 3 1 5A475E87
 P 4600 2000
 F 0 "U1" H 4750 2100 40  0000 C CNN
@@ -1180,7 +1112,7 @@ F 3 "" H 4600 2000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC04 U1
+L 74xx1:74HC04 U1
 U 4 1 5A475F74
 P 4600 2500
 F 0 "U1" H 4750 2600 40  0000 C CNN
@@ -1191,7 +1123,7 @@ F 3 "" H 4600 2500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74HC04 U1
+L 74xx1:74HC04 U1
 U 5 1 5A476065
 P 5500 2500
 F 0 "U1" H 5650 2600 40  0000 C CNN
@@ -1214,9 +1146,9 @@ MODE -> HIGH = SPI
 Wire Notes Line
 	2750 7900 2750 11200
 Wire Wire Line
-	4950 8100 4950 8750
+	4950 8100 4950 8200
 $Comp
-L GND #PWR028
+L power1:GND #PWR028
 U 1 1 5A47AD35
 P 4900 11100
 F 0 "#PWR028" H 4900 11100 30  0001 C CNN
@@ -1229,7 +1161,7 @@ $EndComp
 Wire Wire Line
 	4750 10900 4750 10950
 Wire Wire Line
-	4750 10950 5050 10950
+	4750 10950 4850 10950
 Wire Wire Line
 	4900 10950 4900 11100
 Wire Wire Line
@@ -1244,7 +1176,7 @@ Connection ~ 4950 10950
 Text Notes 650  8500 0    60   ~ 0
 Max load capacitance 50pF
 $Comp
-L +3.3V #PWR029
+L power1:+3.3V #PWR029
 U 1 1 5A4832A7
 P 4100 800
 F 0 "#PWR029" H 4100 760 30  0001 C CNN
@@ -1255,9 +1187,9 @@ F 3 "" H 4100 800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 800  4100 900 
+	4100 800  4100 850 
 $Comp
-L GND #PWR030
+L power1:GND #PWR030
 U 1 1 5A483D4F
 P 4100 3100
 F 0 "#PWR030" H 4100 3100 30  0001 C CNN
@@ -1270,10 +1202,10 @@ $EndComp
 Wire Wire Line
 	4100 3100 4100 3000
 Wire Wire Line
-	4100 1900 4100 2600
+	4100 1900 4100 2000
 Connection ~ 4100 2000
 Wire Wire Line
-	3700 2000 4150 2000
+	3700 2000 4100 2000
 Text Label 6450 2000 2    60   ~ 0
 ~CODEC_RST
 Wire Wire Line
@@ -1285,12 +1217,10 @@ Wire Wire Line
 	6450 2500 5950 2500
 Wire Notes Line
 	3850 4500 3850 7900
-Wire Notes Line
-	8000 4500 8000 11200
 Connection ~ 5700 4750
 Connection ~ 5950 4750
 $Comp
-L GND #PWR031
+L power1:GND #PWR031
 U 1 1 5A487CCC
 P 5950 5300
 F 0 "#PWR031" H 5950 5300 30  0001 C CNN
@@ -1301,7 +1231,7 @@ F 3 "" H 5950 5300 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR032
+L power1:GND #PWR032
 U 1 1 5A487D7C
 P 6300 5300
 F 0 "#PWR032" H 6300 5300 30  0001 C CNN
@@ -1322,7 +1252,7 @@ Wire Notes Line
 Wire Notes Line
 	9300 450  9300 6650
 $Comp
-L R R2
+L Solar-Car-Components:R R2
 U 1 1 5A48A0C5
 P 4100 2800
 F 0 "R2" H 3900 2850 50  0000 C CNN
@@ -1333,7 +1263,7 @@ F 3 "" H 4100 2800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R1
+L Solar-Car-Components:R R1
 U 1 1 5A48B7B7
 P 900 3300
 F 0 "R1" H 700 3350 50  0000 C CNN
@@ -1344,7 +1274,7 @@ F 3 "" H 900 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L C C18
+L Solar-Car-Components:C C18
 U 1 1 5A48BEB6
 P 5150 8450
 F 0 "C18" H 5200 8550 50  0000 L CNN
@@ -1355,7 +1285,7 @@ F 3 "" H 5150 8450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C19
+L device:CP1 C19
 U 1 1 5A48BFAE
 P 5500 8450
 F 0 "C19" H 5550 8550 50  0000 L CNN
@@ -1368,13 +1298,13 @@ $EndComp
 Wire Wire Line
 	5150 8250 5150 8200
 Wire Wire Line
-	4950 8200 5500 8200
+	4950 8200 5150 8200
 Connection ~ 4950 8200
 Wire Wire Line
 	5500 8200 5500 8250
 Connection ~ 5150 8200
 $Comp
-L GND #PWR033
+L power1:GND #PWR033
 U 1 1 5A48C594
 P 5150 8700
 F 0 "#PWR033" H 5150 8700 30  0001 C CNN
@@ -1385,7 +1315,7 @@ F 3 "" H 5150 8700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR034
+L power1:GND #PWR034
 U 1 1 5A48C64A
 P 5500 8700
 F 0 "#PWR034" H 5500 8700 30  0001 C CNN
@@ -1400,7 +1330,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 8700 5500 8650
 $Comp
-L +3.3V #PWR035
+L power1:+3.3V #PWR035
 U 1 1 5A48CA9A
 P 4950 8100
 F 0 "#PWR035" H 4950 8060 30  0001 C CNN
@@ -1411,7 +1341,7 @@ F 3 "" H 4950 8100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR036
+L power1:+5V #PWR036
 U 1 1 5A48CEC9
 P 4850 8100
 F 0 "#PWR036" H 4850 8190 20  0001 C CNN
@@ -1422,7 +1352,7 @@ F 3 "" H 4850 8100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C17
+L Solar-Car-Components:C C17
 U 1 1 5A48D9DD
 P 4550 8450
 F 0 "C17" H 4600 8550 50  0000 L CNN
@@ -1433,7 +1363,7 @@ F 3 "" H 4550 8450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C16
+L device:CP1 C16
 U 1 1 5A48DAA3
 P 4200 8450
 F 0 "C16" H 4250 8550 50  0000 L CNN
@@ -1444,7 +1374,7 @@ F 3 "" H 4200 8450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4200 8200 4850 8200
+	4200 8200 4550 8200
 Wire Wire Line
 	4200 8200 4200 8250
 Connection ~ 4850 8200
@@ -1452,7 +1382,7 @@ Wire Wire Line
 	4550 8250 4550 8200
 Connection ~ 4550 8200
 $Comp
-L GND #PWR037
+L power1:GND #PWR037
 U 1 1 5A48DEE9
 P 4550 8700
 F 0 "#PWR037" H 4550 8700 30  0001 C CNN
@@ -1465,7 +1395,7 @@ $EndComp
 Wire Wire Line
 	4550 8700 4550 8650
 $Comp
-L GND #PWR038
+L power1:GND #PWR038
 U 1 1 5A48E120
 P 4200 8700
 F 0 "#PWR038" H 4200 8700 30  0001 C CNN
@@ -1478,9 +1408,9 @@ $EndComp
 Wire Wire Line
 	4200 8700 4200 8650
 Wire Wire Line
-	4850 8100 4850 8750
+	4850 8100 4850 8200
 $Comp
-L C C27
+L Solar-Car-Components:C C27
 U 1 1 5A48EA72
 P 5800 10850
 F 0 "C27" H 5850 10950 50  0000 L CNN
@@ -1491,7 +1421,7 @@ F 3 "" H 5800 10850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CP1 C28
+L device:CP1 C28
 U 1 1 5A48EB6B
 P 6150 10850
 F 0 "C28" H 6200 10950 50  0000 L CNN
@@ -1502,7 +1432,7 @@ F 3 "" H 6150 10850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR039
+L power1:GND #PWR039
 U 1 1 5A48EC91
 P 5800 11100
 F 0 "#PWR039" H 5800 11100 30  0001 C CNN
@@ -1513,7 +1443,7 @@ F 3 "" H 5800 11100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR040
+L power1:GND #PWR040
 U 1 1 5A48ED53
 P 6150 11100
 F 0 "#PWR040" H 6150 11100 30  0001 C CNN
@@ -1530,7 +1460,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 10650 5800 10600
 Wire Wire Line
-	5700 10600 7200 10600
+	5700 10600 5800 10600
 Wire Wire Line
 	6150 10600 6150 10650
 Connection ~ 5800 10600
@@ -1644,7 +1574,7 @@ ADC_VOUTL-
 Text Label 6300 10400 2    60   ~ 0
 ADC_VOUTL+
 $Comp
-L RCA_conn_x2 CON1
+L musev2:RCA_conn_x2 CON1
 U 1 1 5A4A9A24
 P 9900 1150
 F 0 "CON1" H 9900 1530 60  0000 C CNN
@@ -1655,7 +1585,7 @@ F 3 "" H 9910 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L RCA_conn_x2 CON1
+L musev2:RCA_conn_x2 CON1
 U 2 1 5A4A9CCF
 P 11950 2650
 F 0 "CON1" H 11950 3030 60  0000 C CNN
@@ -1666,7 +1596,7 @@ F 3 "" H 11960 2650 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L 3.5mm_conn_tip_switch CON2
+L musev2:3.5mm_conn_tip_switch CON2
 U 1 1 5A4AA0AD
 P 9900 1900
 F 0 "CON2" H 9900 2280 60  0000 C CNN
@@ -1677,7 +1607,7 @@ F 3 "" H 9900 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 3.5mm_conn_tip_switch CON3
+L musev2:3.5mm_conn_tip_switch CON3
 U 1 1 5A4AA4BB
 P 11950 3400
 F 0 "CON3" H 11950 3780 60  0000 C CNN
@@ -1688,11 +1618,11 @@ F 3 "" H 11950 3400 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 1150 12450 1150
+	10200 1150 10400 1150
 Text Label 12450 1150 2    60   ~ 0
 AUDIO_IN_R
 Wire Wire Line
-	10200 900  12450 900 
+	10200 900  10500 900 
 Text Label 12450 900  2    60   ~ 0
 AUDIO_IN_L
 Wire Wire Line
@@ -1703,11 +1633,11 @@ Connection ~ 10500 900
 Wire Wire Line
 	10200 1750 10400 1750
 Wire Wire Line
-	10200 1650 10600 1650
+	10200 1650 10300 1650
 Wire Wire Line
 	10300 1650 10300 1300
 $Comp
-L GND #PWR047
+L power1:GND #PWR047
 U 1 1 5A4ABC49
 P 10600 1900
 F 0 "#PWR047" H 10600 1900 30  0001 C CNN
@@ -1718,9 +1648,9 @@ F 3 "" H 10600 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9450 2400 11650 2400
+	9450 2400 10250 2400
 Wire Wire Line
-	9450 2650 11650 2650
+	9450 2650 10500 2650
 Text Label 9450 2400 0    60   ~ 0
 AUDIO_OUT_L
 Text Label 9450 2650 0    60   ~ 0
@@ -1736,13 +1666,13 @@ Wire Wire Line
 	11450 3250 11450 2650
 Connection ~ 11450 2650
 Wire Wire Line
-	11250 3150 11650 3150
+	11250 3150 11550 3150
 Wire Wire Line
 	11550 3150 11550 2800
 Wire Wire Line
 	11550 2800 11650 2800
 $Comp
-L GND #PWR048
+L power1:GND #PWR048
 U 1 1 5A4ACFB6
 P 11250 3400
 F 0 "#PWR048" H 11250 3400 30  0001 C CNN
@@ -1755,7 +1685,7 @@ $EndComp
 NoConn ~ 10200 1900
 NoConn ~ 11650 3400
 $Comp
-L DPST SW2
+L device:DPST SW2
 U 1 1 5A489176
 P 3900 1400
 F 0 "SW2" H 3600 1400 70  0000 C CNN
@@ -1775,7 +1705,7 @@ Connection ~ 4100 850
 Wire Wire Line
 	5450 2400 5450 2350
 $Comp
-L +3.3V #PWR050
+L power1:+3.3V #PWR050
 U 1 1 5A48C5D0
 P 5450 2350
 F 0 "#PWR050" H 5450 2310 30  0001 C CNN
@@ -1788,7 +1718,7 @@ $EndComp
 Wire Wire Line
 	5450 2600 5450 2650
 $Comp
-L GND #PWR051
+L power1:GND #PWR051
 U 1 1 5A48CA66
 P 5450 2650
 F 0 "#PWR051" H 5450 2650 30  0001 C CNN
@@ -1799,7 +1729,7 @@ F 3 "" H 5450 2650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR052
+L power1:+3.3V #PWR052
 U 1 1 5A48D5EF
 P 4550 2350
 F 0 "#PWR052" H 4550 2310 30  0001 C CNN
@@ -1810,7 +1740,7 @@ F 3 "" H 4550 2350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR053
+L power1:GND #PWR053
 U 1 1 5A48D708
 P 4550 2650
 F 0 "#PWR053" H 4550 2650 30  0001 C CNN
@@ -1825,7 +1755,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 2400 4550 2350
 $Comp
-L GND #PWR054
+L power1:GND #PWR054
 U 1 1 5A48E13D
 P 4550 2150
 F 0 "#PWR054" H 4550 2150 30  0001 C CNN
@@ -1836,7 +1766,7 @@ F 3 "" H 4550 2150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR055
+L power1:+3.3V #PWR055
 U 1 1 5A48E256
 P 4550 1850
 F 0 "#PWR055" H 4550 1810 30  0001 C CNN
@@ -1861,7 +1791,7 @@ Wire Wire Line
 Wire Wire Line
 	4550 3700 3950 3700
 $Comp
-L +3.3V #PWR061
+L power1:+3.3V #PWR061
 U 1 1 5A4A5011
 P 4050 9600
 F 0 "#PWR061" H 4050 9560 30  0001 C CNN
@@ -1882,7 +1812,7 @@ SPI_CLK
 Text Label 3150 9300 0    60   ~ 0
 SPI_MOSI
 $Comp
-L +5V #PWR065
+L power1:+5V #PWR065
 U 1 1 5A4B043A
 P 6900 850
 F 0 "#PWR065" H 6900 940 20  0001 C CNN
@@ -1893,9 +1823,9 @@ F 3 "" H 6900 850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6900 850  6900 950 
+	6900 850  6900 900 
 $Comp
-L CP1 C1
+L device:CP1 C1
 U 1 1 5A4B0441
 P 6900 1150
 F 0 "C1" H 6950 1250 50  0000 L CNN
@@ -1908,7 +1838,7 @@ $EndComp
 Text Notes 8150 750  0    60   ~ 0
 10uF = Al. Polymer\n0.1uF = Ceramic X7R
 $Comp
-L C C2
+L Solar-Car-Components:C C2
 U 1 1 5A4B1733
 P 7300 1150
 F 0 "C2" H 7350 1250 50  0000 L CNN
@@ -1921,10 +1851,10 @@ $EndComp
 Wire Wire Line
 	7300 950  7300 900 
 Wire Wire Line
-	6900 900  8850 900 
+	6900 900  7300 900 
 Connection ~ 6900 900 
 $Comp
-L CP1 C3
+L device:CP1 C3
 U 1 1 5A4B5BCD
 P 8100 1150
 F 0 "C3" H 8150 1250 50  0000 L CNN
@@ -1935,7 +1865,7 @@ F 3 "" H 8100 1150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C4
+L Solar-Car-Components:C C4
 U 1 1 5A4B5D15
 P 8500 1150
 F 0 "C4" H 8550 1250 50  0000 L CNN
@@ -1952,7 +1882,7 @@ Wire Wire Line
 	8500 900  8500 950 
 Connection ~ 8100 900 
 $Comp
-L C C41
+L Solar-Car-Components:C C41
 U 1 1 5A4BF7ED
 P 7700 1150
 F 0 "C41" H 7750 1250 50  0000 L CNN
@@ -1966,7 +1896,7 @@ Wire Wire Line
 	7700 900  7700 950 
 Connection ~ 7700 900 
 $Comp
-L C C42
+L Solar-Car-Components:C C42
 U 1 1 5A4C083B
 P 8850 1150
 F 0 "C42" H 8900 1250 50  0000 L CNN
@@ -1980,7 +1910,7 @@ Wire Wire Line
 	8850 900  8850 950 
 Connection ~ 8500 900 
 $Comp
-L GND #PWR077
+L power1:GND #PWR077
 U 1 1 5A4C0F35
 P 6900 1550
 F 0 "#PWR077" H 6900 1550 30  0001 C CNN
@@ -1996,7 +1926,7 @@ Wire Wire Line
 	10600 1650 10600 1900
 Connection ~ 10300 1650
 $Comp
-L TPD2E1B06 D2
+L musev3:TPD2E1B06 D2
 U 1 1 5A4C81ED
 P 11450 1500
 F 0 "D2" H 11250 1400 60  0000 C CNN
@@ -2007,7 +1937,7 @@ F 3 "" H 11450 1500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TPD2E1B06 D2
+L musev3:TPD2E1B06 D2
 U 2 1 5A4C85F8
 P 11650 1500
 F 0 "D2" H 11450 1400 60  0000 C CNN
@@ -2024,7 +1954,7 @@ Wire Wire Line
 	11650 1200 11650 900 
 Connection ~ 11650 900 
 $Comp
-L GND #PWR079
+L power1:GND #PWR079
 U 1 1 5A4CAC39
 P 11450 1900
 F 0 "#PWR079" H 11450 1900 30  0001 C CNN
@@ -2035,7 +1965,7 @@ F 3 "" H 11450 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR080
+L power1:GND #PWR080
 U 1 1 5A4CAD7F
 P 11650 1900
 F 0 "#PWR080" H 11650 1900 30  0001 C CNN
@@ -2050,7 +1980,7 @@ Wire Wire Line
 Wire Wire Line
 	11650 1800 11650 1900
 $Comp
-L TPD2E1B06 D3
+L musev3:TPD2E1B06 D3
 U 1 1 5A4CB6E2
 P 10850 3000
 F 0 "D3" H 10650 2900 60  0000 C CNN
@@ -2061,7 +1991,7 @@ F 3 "" H 10850 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L TPD2E1B06 D3
+L musev3:TPD2E1B06 D3
 U 2 1 5A4CB6E8
 P 11050 3000
 F 0 "D3" H 10850 2900 60  0000 C CNN
@@ -2072,7 +2002,7 @@ F 3 "" H 11050 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR081
+L power1:GND #PWR081
 U 1 1 5A4CB6EE
 P 10850 3400
 F 0 "#PWR081" H 10850 3400 30  0001 C CNN
@@ -2083,7 +2013,7 @@ F 3 "" H 10850 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR082
+L power1:GND #PWR082
 U 1 1 5A4CB6F4
 P 11050 3400
 F 0 "#PWR082" H 11050 3400 30  0001 C CNN
@@ -2105,7 +2035,7 @@ Wire Wire Line
 Text Notes 11850 1950 0    60   ~ 0
 Refer to \ndatasheet\nfor TVS \nlayout
 $Comp
-L C C46
+L Solar-Car-Components:C C46
 U 1 1 5A4CD7C5
 P 11050 1500
 F 0 "C46" V 11100 1600 50  0000 L CNN
@@ -2116,7 +2046,7 @@ F 3 "" H 11050 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C45
+L Solar-Car-Components:C C45
 U 1 1 5A4CDC95
 P 10800 1500
 F 0 "C45" V 10850 1600 50  0000 L CNN
@@ -2127,7 +2057,7 @@ F 3 "" H 10800 1500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR083
+L power1:GND #PWR083
 U 1 1 5A4CE5C7
 P 10800 1900
 F 0 "#PWR083" H 10800 1900 30  0001 C CNN
@@ -2138,7 +2068,7 @@ F 3 "" H 10800 1900 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR084
+L power1:GND #PWR084
 U 1 1 5A4CE719
 P 11050 1900
 F 0 "#PWR084" H 11050 1900 30  0001 C CNN
@@ -2159,7 +2089,7 @@ Wire Wire Line
 Wire Wire Line
 	11050 1900 11050 1700
 $Comp
-L C C48
+L Solar-Car-Components:C C48
 U 1 1 5A4CF7ED
 P 10500 3000
 F 0 "C48" V 10550 3050 50  0000 L CNN
@@ -2170,7 +2100,7 @@ F 3 "" H 10500 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C47
+L Solar-Car-Components:C C47
 U 1 1 5A4CF7F3
 P 10250 3000
 F 0 "C47" V 10300 3050 50  0000 L CNN
@@ -2181,7 +2111,7 @@ F 3 "" H 10250 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR085
+L power1:GND #PWR085
 U 1 1 5A4CF7F9
 P 10250 3400
 F 0 "#PWR085" H 10250 3400 30  0001 C CNN
@@ -2192,7 +2122,7 @@ F 3 "" H 10250 3400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR086
+L power1:GND #PWR086
 U 1 1 5A4CF7FF
 P 10500 3400
 F 0 "#PWR086" H 10500 3400 30  0001 C CNN
@@ -2231,7 +2161,7 @@ Connection ~ 6150 10600
 Text Label 7200 10600 2    60   ~ 0
 CODEC_VCOM
 $Comp
-L C C25
+L Solar-Car-Components:C C25
 U 1 1 5A4F4C38
 P 6050 9300
 F 0 "C25" V 6100 9400 50  0000 L CNN
@@ -2242,7 +2172,7 @@ F 3 "" H 6050 9300 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L C C22
+L Solar-Car-Components:C C22
 U 1 1 5A4F572D
 P 6050 9000
 F 0 "C22" V 6100 9100 50  0000 L CNN
@@ -2253,7 +2183,7 @@ F 3 "" H 6050 9000 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L RJMG163128101NR J1
+L musev3:RJMG163128101NR J1
 U 1 1 5A4FCAAB
 P 1250 6300
 F 0 "J1" H 1350 6900 60  0000 L CNN
@@ -2264,7 +2194,7 @@ F 3 "" H 1250 6300 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L R R46
+L Solar-Car-Components:R R46
 U 1 1 5A4FF128
 P 2650 6650
 F 0 "R46" H 2450 6700 50  0000 C CNN
@@ -2275,7 +2205,7 @@ F 3 "" H 2650 6650 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R47
+L Solar-Car-Components:R R47
 U 1 1 5A4FF2A5
 P 2850 6650
 F 0 "R47" H 2650 6700 50  0000 C CNN
@@ -2292,7 +2222,7 @@ Wire Wire Line
 	2850 6450 2850 6100
 Connection ~ 2850 6100
 $Comp
-L C C50
+L Solar-Car-Components:C C50
 U 1 1 5A500005
 P 2850 7400
 F 0 "C50" V 2900 7500 50  0000 L CNN
@@ -2307,10 +2237,10 @@ Wire Wire Line
 Wire Wire Line
 	2650 7100 2850 7100
 Wire Wire Line
-	2850 6850 2850 7200
+	2850 6850 2850 7100
 Connection ~ 2850 7100
 $Comp
-L GND #PWR087
+L power1:GND #PWR087
 U 1 1 5A500723
 P 2850 7750
 F 0 "#PWR087" H 2850 7750 30  0001 C CNN
@@ -2323,7 +2253,7 @@ $EndComp
 Wire Wire Line
 	2850 7750 2850 7600
 $Comp
-L R R44
+L Solar-Car-Components:R R44
 U 1 1 5A5015B7
 P 2650 5350
 F 0 "R44" H 2450 5400 50  0000 C CNN
@@ -2334,7 +2264,7 @@ F 3 "" H 2650 5350 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R45
+L Solar-Car-Components:R R45
 U 1 1 5A50173C
 P 2850 5350
 F 0 "R45" H 2650 5400 50  0000 C CNN
@@ -2351,7 +2281,7 @@ Wire Wire Line
 	2650 5550 2650 5800
 Connection ~ 2650 5800
 $Comp
-L C C49
+L Solar-Car-Components:C C49
 U 1 1 5A501DE7
 P 2450 5150
 F 0 "C49" V 2500 5250 50  0000 L CNN
@@ -2362,7 +2292,7 @@ F 3 "" H 2450 5150 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR088
+L power1:GND #PWR088
 U 1 1 5A501F7A
 P 2450 5550
 F 0 "#PWR088" H 2450 5550 30  0001 C CNN
@@ -2377,14 +2307,14 @@ Wire Wire Line
 Wire Wire Line
 	2650 5150 2650 4850
 Wire Wire Line
-	2450 4850 2850 4850
+	2450 4850 2650 4850
 Wire Wire Line
 	2450 4850 2450 4950
 Wire Wire Line
 	2850 4850 2850 5150
 Connection ~ 2650 4850
 Wire Wire Line
-	6900 1350 6900 1550
+	6900 1350 6900 1450
 Connection ~ 6900 1450
 Connection ~ 7300 1450
 Connection ~ 7700 1450
@@ -2393,7 +2323,7 @@ Connection ~ 8500 1450
 Wire Wire Line
 	8850 1450 8850 1350
 Wire Wire Line
-	6900 1450 8850 1450
+	6900 1450 7300 1450
 Wire Wire Line
 	7300 1350 7300 1450
 Wire Wire Line
@@ -2403,7 +2333,7 @@ Wire Wire Line
 Wire Wire Line
 	8500 1450 8500 1350
 $Comp
-L R R?
+L Solar-Car-Components:R R?
 U 1 1 5B2B9793
 P 6500 10850
 F 0 "R?" V 6350 10900 50  0000 L CNN
@@ -2414,10 +2344,10 @@ F 3 "" H 6500 10850 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6500 10500 6500 10650
+	6500 10500 6500 10600
 Connection ~ 6500 10600
 $Comp
-L GND #PWR?
+L power1:GND #PWR?
 U 1 1 5B2B97A6
 P 6500 11100
 F 0 "#PWR?" H 6500 11100 30  0001 C CNN
@@ -2430,7 +2360,7 @@ $EndComp
 Wire Wire Line
 	6500 11050 6500 11100
 $Comp
-L +5V #PWR?
+L power1:+5V #PWR?
 U 1 1 5B2B97B4
 P 6500 10050
 F 0 "#PWR?" H 6500 10140 20  0001 C CNN
@@ -2443,7 +2373,7 @@ $EndComp
 Wire Wire Line
 	6500 10100 6500 10050
 $Comp
-L R R?
+L Solar-Car-Components:R R?
 U 1 1 5B2B97BB
 P 6500 10300
 F 0 "R?" V 6350 10350 50  0000 L CNN
@@ -2454,7 +2384,7 @@ F 3 "" H 6500 10300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L ATX24 J?
+L atx24:ATX24 J?
 U 1 1 5B780D67
 P 2050 1700
 F 0 "J?" H 2050 1000 60  0000 C CNN
@@ -2465,7 +2395,7 @@ F 3 "" H 2050 1700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR?
+L power1:+3.3V #PWR?
 U 1 1 5B788417
 P 2550 1000
 F 0 "#PWR?" H 2550 960 30  0001 C CNN
@@ -2480,7 +2410,7 @@ Wire Wire Line
 Wire Wire Line
 	2550 1150 2550 1000
 $Comp
-L +3.3V #PWR?
+L power1:+3.3V #PWR?
 U 1 1 5B78881C
 P 1400 1000
 F 0 "#PWR?" H 1400 960 30  0001 C CNN
@@ -2491,7 +2421,7 @@ F 3 "" H 1400 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1400 1000 1400 2250
+	1400 1000 1400 1150
 Wire Wire Line
 	1400 1250 1700 1250
 Wire Wire Line
@@ -2501,7 +2431,7 @@ Wire Wire Line
 	1400 2250 1700 2250
 Connection ~ 1400 1250
 $Comp
-L +5V #PWR?
+L power1:+5V #PWR?
 U 1 1 5B789442
 P 1250 1000
 F 0 "#PWR?" H 1250 1090 20  0001 C CNN
@@ -2512,7 +2442,7 @@ F 3 "" H 1250 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR?
+L power1:+5V #PWR?
 U 1 1 5B7896F2
 P 2700 1000
 F 0 "#PWR?" H 2700 1090 20  0001 C CNN
@@ -2523,26 +2453,22 @@ F 3 "" H 2700 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 1000 1250 1650
+	1250 1000 1250 1450
 Wire Wire Line
 	1250 1450 1700 1450
 Wire Wire Line
 	1250 1650 1700 1650
 Connection ~ 1250 1450
 Wire Wire Line
-	2700 1000 2700 1950
-Wire Wire Line
 	2700 1950 2400 1950
 Wire Wire Line
 	2400 2050 2700 2050
-Wire Wire Line
-	2700 1900 2700 2150
 Connection ~ 2700 1900
 Wire Wire Line
 	2700 2150 2400 2150
 Connection ~ 2700 2050
 $Comp
-L -5V #PWR?
+L power1:-5V #PWR?
 U 1 1 5B78AB41
 P 2800 2350
 F 0 "#PWR?" H 2800 2490 20  0001 C CNN
@@ -2557,7 +2483,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1850 2400 1850
 $Comp
-L -12V #PWR?
+L power1:-12V #PWR?
 U 1 1 5B78B46F
 P 2950 2350
 F 0 "#PWR?" H 2950 2480 20  0001 C CNN
@@ -2572,7 +2498,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 1250 2400 1250
 $Comp
-L GND #PWR?
+L power1:GND #PWR?
 U 1 1 5B78B8BC
 P 2550 2400
 F 0 "#PWR?" H 2550 2400 30  0001 C CNN
@@ -2583,7 +2509,7 @@ F 3 "" H 2550 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 1350 2550 2400
+	2550 1350 2550 1550
 Wire Wire Line
 	2550 1750 2400 1750
 Wire Wire Line
@@ -2596,7 +2522,7 @@ Wire Wire Line
 	2400 1350 2550 1350
 Connection ~ 2550 1650
 $Comp
-L GND #PWR?
+L power1:GND #PWR?
 U 1 1 5B78C383
 P 1550 2400
 F 0 "#PWR?" H 1550 2400 30  0001 C CNN
@@ -2607,7 +2533,7 @@ F 3 "" H 1550 2400 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1550 1350 1550 2400
+	1550 1350 1550 1550
 Wire Wire Line
 	1550 1750 1700 1750
 Wire Wire Line
@@ -2620,7 +2546,7 @@ Wire Wire Line
 	2400 1550 2550 1550
 Connection ~ 2550 1550
 $Comp
-L +12V #PWR?
+L power1:+12V #PWR?
 U 1 1 5B78D0D1
 P 1100 1000
 F 0 "#PWR?" H 1100 950 20  0001 C CNN
@@ -2631,14 +2557,14 @@ F 3 "" H 1100 1000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1100 1000 1100 2150
+	1100 1000 1100 2050
 Wire Wire Line
 	1100 2050 1700 2050
 Wire Wire Line
 	1100 2150 1700 2150
 Connection ~ 1100 2050
 $Comp
-L +5VSB #PWR?
+L power1:+5VSB #PWR?
 U 1 1 5B78DA84
 P 950 1000
 F 0 "#PWR?" H 950 1090 20  0001 C CNN
@@ -2663,7 +2589,7 @@ PWR_OK
 Wire Notes Line
 	3500 3250 6550 3250
 $Comp
-L LED D?
+L Solar-Car-Components:LED D?
 U 1 1 5B7A4635
 P 1450 4000
 F 0 "D?" H 1310 4050 50  0000 C CNN
@@ -2674,7 +2600,7 @@ F 3 "" H 1450 4000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L GND #PWR?
+L power1:GND #PWR?
 U 1 1 5B7A463B
 P 1450 4300
 F 0 "#PWR?" H 1450 4300 30  0001 C CNN
@@ -2691,7 +2617,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 3100 1450 3000
 $Comp
-L R R?
+L Solar-Car-Components:R R?
 U 1 1 5B7A464A
 P 1450 3300
 F 0 "R?" H 1250 3350 50  0000 C CNN
@@ -2702,7 +2628,7 @@ F 3 "" H 1450 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +5VSB #PWR?
+L power1:+5VSB #PWR?
 U 1 1 5B7A4C79
 P 1450 3000
 F 0 "#PWR?" H 1450 3090 20  0001 C CNN
@@ -2713,7 +2639,7 @@ F 3 "" H 1450 3000 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR?
+L power1:+5V #PWR?
 U 1 1 5B7A537E
 P 900 3000
 F 0 "#PWR?" H 900 3090 20  0001 C CNN
@@ -2726,7 +2652,7 @@ $EndComp
 NoConn ~ 6850 6200
 NoConn ~ 6850 6300
 $Comp
-L ATMEGA32U4-A U?
+L atmel:ATMEGA32U4-A U?
 U 1 1 5B7AA1CC
 P 9950 9000
 F 0 "U?" H 9000 10700 40  0000 C CNN
@@ -2747,8 +2673,6 @@ Wire Notes Line
 Wire Notes Line
 	8000 6650 16050 6650
 Wire Notes Line
-	8000 6650 8000 6700
-Wire Notes Line
 	1700 4500 1700 2550
 Wire Wire Line
 	4650 6000 4150 6000
@@ -2758,4 +2682,220 @@ Text Label 4150 5900 0    60   ~ 0
 USB_D+
 Text Label 4150 6000 0    60   ~ 0
 USB_D-
+Wire Wire Line
+	5650 7750 5700 7750
+Wire Wire Line
+	3100 6200 3100 6450
+Wire Wire Line
+	3100 5900 3100 6200
+Wire Wire Line
+	13050 4650 13400 4650
+Wire Wire Line
+	13050 4650 13050 4750
+Wire Wire Line
+	11800 4650 11800 4700
+Wire Wire Line
+	11800 4650 12000 4650
+Wire Wire Line
+	10600 4650 10750 4650
+Wire Wire Line
+	10750 4650 10900 4650
+Wire Wire Line
+	10900 4650 11050 4650
+Wire Wire Line
+	11050 4650 11200 4650
+Wire Wire Line
+	11200 4650 11350 4650
+Wire Wire Line
+	11350 4650 11500 4650
+Wire Wire Line
+	11500 4650 11650 4650
+Wire Wire Line
+	11650 4650 11800 4650
+Wire Wire Line
+	14600 4650 14750 4650
+Wire Wire Line
+	14450 4650 14600 4650
+Wire Wire Line
+	14300 4650 14450 4650
+Wire Wire Line
+	14150 4650 14300 4650
+Wire Wire Line
+	14000 4650 14150 4650
+Wire Wire Line
+	13850 4650 14000 4650
+Wire Wire Line
+	13700 4650 13850 4650
+Wire Wire Line
+	13550 4650 13700 4650
+Wire Wire Line
+	13400 4650 13550 4650
+Wire Wire Line
+	10450 5200 12000 5200
+Wire Wire Line
+	10600 5300 12000 5300
+Wire Wire Line
+	10750 5400 12000 5400
+Wire Wire Line
+	10900 5500 12000 5500
+Wire Wire Line
+	11050 5600 12000 5600
+Wire Wire Line
+	11200 5700 12000 5700
+Wire Wire Line
+	11350 5800 12000 5800
+Wire Wire Line
+	11500 5900 12000 5900
+Wire Wire Line
+	11650 6000 12000 6000
+Wire Wire Line
+	11800 6100 12000 6100
+Wire Wire Line
+	13400 5200 15550 5200
+Wire Wire Line
+	13550 5300 15550 5300
+Wire Wire Line
+	13700 5400 15550 5400
+Wire Wire Line
+	13850 5500 15550 5500
+Wire Wire Line
+	14000 5600 15550 5600
+Wire Wire Line
+	14150 5700 15550 5700
+Wire Wire Line
+	14300 5800 15550 5800
+Wire Wire Line
+	14450 5900 15550 5900
+Wire Wire Line
+	14600 6000 15550 6000
+Wire Wire Line
+	14750 6100 15550 6100
+Wire Wire Line
+	1400 8850 1400 9650
+Wire Wire Line
+	4050 9900 4100 9900
+Wire Wire Line
+	4000 10000 4100 10000
+Wire Wire Line
+	3950 10100 4100 10100
+Wire Wire Line
+	4850 10950 4900 10950
+Wire Wire Line
+	4900 10950 4950 10950
+Wire Wire Line
+	4950 10950 5050 10950
+Wire Wire Line
+	4100 2000 4100 2500
+Wire Wire Line
+	4100 2000 4150 2000
+Wire Wire Line
+	4100 2500 4100 2600
+Wire Wire Line
+	5700 4750 5700 5400
+Wire Wire Line
+	5950 4750 6300 4750
+Wire Wire Line
+	4950 8200 4950 8750
+Wire Wire Line
+	5150 8200 5500 8200
+Wire Wire Line
+	4850 8200 4850 8750
+Wire Wire Line
+	4550 8200 4850 8200
+Wire Wire Line
+	5800 10600 6150 10600
+Wire Wire Line
+	10500 900  11050 900 
+Wire Wire Line
+	11350 2400 11650 2400
+Wire Wire Line
+	11450 2650 11650 2650
+Wire Wire Line
+	4100 850  4100 900 
+Wire Wire Line
+	6900 900  6900 950 
+Wire Wire Line
+	7300 900  7700 900 
+Wire Wire Line
+	8100 900  8500 900 
+Wire Wire Line
+	7700 900  8100 900 
+Wire Wire Line
+	8500 900  8850 900 
+Wire Wire Line
+	10300 1650 10600 1650
+Wire Wire Line
+	11450 1150 12450 1150
+Wire Wire Line
+	11650 900  12450 900 
+Wire Wire Line
+	11550 3150 11650 3150
+Wire Wire Line
+	10800 1150 11450 1150
+Wire Wire Line
+	11050 900  11650 900 
+Wire Wire Line
+	10500 2650 11050 2650
+Wire Wire Line
+	11050 2650 11450 2650
+Wire Wire Line
+	10400 1150 10800 1150
+Wire Wire Line
+	10850 2400 11350 2400
+Wire Wire Line
+	10250 2400 10850 2400
+Wire Wire Line
+	6150 10600 6500 10600
+Wire Wire Line
+	2650 6300 3650 6300
+Wire Wire Line
+	2850 6100 3650 6100
+Wire Wire Line
+	2850 7100 2850 7200
+Wire Wire Line
+	2850 6000 3650 6000
+Wire Wire Line
+	2650 5800 3650 5800
+Wire Wire Line
+	2650 4850 2850 4850
+Wire Wire Line
+	6900 1450 6900 1550
+Wire Wire Line
+	7300 1450 7700 1450
+Wire Wire Line
+	7700 1450 8100 1450
+Wire Wire Line
+	8100 1450 8500 1450
+Wire Wire Line
+	8500 1450 8850 1450
+Wire Wire Line
+	6500 10600 6500 10650
+Wire Wire Line
+	6500 10600 7200 10600
+Wire Wire Line
+	1400 1150 1400 1250
+Wire Wire Line
+	1400 1250 1400 2250
+Wire Wire Line
+	1250 1450 1250 1650
+Wire Wire Line
+	2700 2050 2700 2150
+Wire Wire Line
+	2550 2250 2550 2400
+Wire Wire Line
+	2550 1750 2550 2250
+Wire Wire Line
+	2550 1650 2550 1750
+Wire Wire Line
+	1550 1750 1550 2400
+Wire Wire Line
+	1550 1550 1550 1750
+Wire Wire Line
+	2550 1550 2550 1650
+Wire Wire Line
+	1100 2050 1100 2150
+Wire Notes Line
+	8000 4500 8000 11200
+Wire Wire Line
+	2700 1000 2700 2050
 $EndSCHEMATC
